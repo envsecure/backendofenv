@@ -12,4 +12,4 @@ app.use(express.json({ limit: "2mb" }));
 app.use("/api", apiRoutes);
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`EnvShare API → http://localhost:${PORT}`));
+app.listen(PORT,"0.0.0.0", () => console.log(`EnvShare API → http://localhost:${PORT}`));
